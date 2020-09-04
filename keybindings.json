@@ -1,0 +1,79 @@
+[
+  {
+    // cmd + ç --> comment line
+    "key": "cmd+[Backslash]",
+    "command": "editor.action.commentLine",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    // --> remove line
+    "key": "cmd+d",
+    "command": "editor.action.deleteLines",
+    "when": "textInputFocus && !editorReadonly"
+  },
+  {
+    // --> go to line
+    "key": "cmd+g",
+    "command": "workbench.action.gotoLine"
+  },
+  {
+    // --> show/hide terminal
+    "key": "cmd+t",
+    "command": "workbench.action.togglePanel"
+  },
+  {
+    // cmd + ñ --> maximize/restore terminal
+    "key": "cmd+[Semicolon]",
+    "command": "workbench.action.toggleMaximizedPanel"
+  },
+  {
+    // cmd + º --> split editor
+    "key": "cmd+[IntlBackslash]",
+    "command": "workbench.action.splitEditor"
+  },
+  {
+    // --> toggle zen mode
+    "key": "alt+z",
+    "command": "workbench.action.toggleZenMode"
+  },
+  {
+    // --> camelcase navigation
+    "key": "alt+right",
+    "command": "cursorWordPartRight",
+    "when": "textInputFocus"
+  },
+  {
+    // --> camelcase navigation
+    "key": "alt+left",
+    "command": "cursorWordPartStartLeft",
+    "when": "textInputFocus"
+  },
+  {
+    // -->  camelcase selection
+    "key": "shift+alt+right",
+    "command": "cursorWordPartRightSelect",
+    "when": "textInputFocus"
+  },
+  {
+    // -->  camelcase selection
+    "key": "shift+alt+left",
+    "command": "cursorWordPartStartLeftSelect",
+    "when": "textInputFocus"
+  },
+  {
+    // -->  match next occurrence
+    "key": "cmd+m",
+    "command": "editor.action.addSelectionToNextFindMatch",
+    "when": "editorFocus"
+  },
+  {
+    // --> tabs navigation
+    "key": "ctrl+tab",
+    "command": "workbench.action.nextEditor"
+  },
+  {
+    // --> tabs navigation
+    "key": "ctrl+shift+tab",
+    "command": "workbench.action.previousEditor"
+  }
+]
