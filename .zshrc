@@ -1,52 +1,50 @@
-# Path to your oh-my-zsh installation.
-export ZSH="/Users/jgranados/.oh-my-zsh"
+# OH-MY-ZSH CONFIGURATION #
 
-# Theme
-ZSH_THEME="cobalt2"
+# update behavior
+zstyle ':omz:update' mode auto
 
-# red dots to be displayed while waiting for completion
-COMPLETION_WAITING_DOTS="true"
+# disable auto-setting terminal title.
+DISABLE_AUTO_TITLE="true"
+
+# disable marking untracked files under VCS as dirty. This makes repository status check for large repositories much faster
+DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 # skip the verification of insecure directories
 ZSH_DISABLE_COMPFIX="true"
 
-# remove % symbol
-# unsetopt PROMPT_SP
-setopt PROMPT_CR
-setopt PROMPT_SP
-export PROMPT_EOL_MARK=""
+# plugins (add wisely, as too many plugins slow down shell startup.)
+plugins=(git)
 
+# source $ZSH/oh-my-zsh.sh
+
+# USER CONFIGURATION #
+
+#nvm
 export NVM_DIR="$HOME/.nvm"
-[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
-[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-# Plugins
-# Standard plugins can be found in ~/.oh-my-zsh/plugins/*
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-plugins=(git brew yarn npm z )
+# starship prompt
+eval "$(starship init zsh)"
 
-source $ZSH/oh-my-zsh.sh
 
-# Aliases
-alias zshrc="code ~/.zshrc"
-alias hyper="code ~/.hyper.js"
-alias zsh="source ~/.zshrc"
+# aliases
+alias l='colorls --group-directories-first --almost-all'
+alias ls='colorls --group-directories-first --almost-all'
+alias ll='colorls --group-directories-first --almost-all --long' #
 
-alias home="cd ~/"
-alias db="cd ~/Dropbox/"
-alias src="cd ~/Dropbox/Development/Sources/"
+# ruby
+export PATH="/usr/local/opt/ruby/bin:$PATH"
 
-alias fetch="git fetch -p"
-alias pull="git pull"
-alias push="git push"
-alias st="git status"
+# JAVA
+export JAVA_HOME="/Applications/Android Studio.app/Contents/jre/Contents/Home"
 
-alias add="git add ."
-alias amend="git commit --amend"
-alias merge="git merge develop"
-alias log="git log --oneline"
+# Android Studio
+export ANDROID_HOME="/Users/javiergranados/Library/Android/sdk"
+export PATH="$PATH:$ANDROID_HOME/emulator"
+export PATH="$PATH:$ANDROID_HOME/tools"
+export PATH="$PATH:$ANDROID_HOME/tools/bin"
+export PATH="$PATH:$ANDROID_HOME/platform-tools"
 
-alias branch="git branch"
-alias brancha="git branch -a"
-alias dev="git checkout develop"
-alias master="git checkout master"
+# Xcode
+export SDKROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk

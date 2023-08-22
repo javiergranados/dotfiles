@@ -1,46 +1,86 @@
 {
-  "editor.cursorBlinking": "solid",
+  "editor.cursorBlinking": "expand",
   "editor.cursorStyle": "line",
   "editor.cursorWidth": 3,
   "editor.detectIndentation": false,
   "editor.dragAndDrop": false,
-  "editor.folding": false,
-  "editor.fontFamily": "JetBrains Mono, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontFamily": "Operator Mono, Fira Code iScript, Cartograph CF, Menlo, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": true,
-  "editor.fontSize": 17,
+  "editor.fontSize": 16,
   "editor.fontWeight": "400",
-  "editor.formatOnPaste": true,
   "editor.hideCursorInOverviewRuler": true,
-  "editor.letterSpacing": 1.2,
-  "editor.lineHeight": 25,
+  "editor.wordWrap": "off",
+  "editor.letterSpacing": 0.7,
+  "editor.lineHeight": 2,
   "editor.matchBrackets": "never",
   "editor.minimap.enabled": false,
   "editor.minimap.showSlider": "always",
   "editor.overviewRulerBorder": false,
   "editor.parameterHints.enabled": false,
-  "editor.renderIndentGuides": false,
   "editor.renderWhitespace": "boundary",
-  "editor.rulers": [80, 100, 120],
+  "editor.rulers": [80, 100, 120, 190],
   "editor.scrollBeyondLastLine": true,
-  "editor.snippetSuggestions": "top",
+  "editor.snippetSuggestions": "inline",
   "editor.tabSize": 2,
   "editor.useTabStops": true,
   "editor.renderControlCharacters": false,
-  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.guides.indentation": false,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.guides.bracketPairsHorizontal": false,
+  "editor.linkedEditing": true,
+  "html.autoClosingTags": false,
+
+  "breadcrumbs.enabled": true,
+  "breadcrumbs.showArrays": false,
+  "breadcrumbs.showBooleans": false,
+  "breadcrumbs.showClasses": false,
+  "breadcrumbs.showConstants": false,
+  "breadcrumbs.showConstructors": false,
+  "breadcrumbs.showEnumMembers": false,
+  "breadcrumbs.showVariables": false,
+  "breadcrumbs.showTypeParameters": false,
+  "breadcrumbs.showStructs": false,
+  "breadcrumbs.showStrings": false,
+  "breadcrumbs.showProperties": false,
+  "breadcrumbs.showOperators": false,
+  "breadcrumbs.showObjects": false,
+  "breadcrumbs.showNumbers": false,
+  "breadcrumbs.showNull": false,
+  "breadcrumbs.showNamespaces": false,
+  "breadcrumbs.showModules": false,
+  "breadcrumbs.showMethods": false,
+  "breadcrumbs.showKeys": false,
+  "breadcrumbs.showInterfaces": false,
+  "breadcrumbs.showFunctions": false,
+  "breadcrumbs.showFiles": false,
+  "breadcrumbs.showFields": false,
+  "breadcrumbs.showEvents": false,
+  "breadcrumbs.showEnums": false,
+  "breadcrumbs.showPackages": false,
+  "breadcrumbs.symbolPath": "off",
 
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
-  "explorer.openEditors.visible": 0,
+  "explorer.openEditors.visible": 1,
 
   "workbench.editor.highlightModifiedTabs": true,
-  "workbench.colorTheme": "Night Owl",
   "workbench.editor.tabSizing": "shrink",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.startupEditor": "newUntitledFile",
   "workbench.editor.openPositioning": "last",
+  "workbench.activityBar.visible": false,
+  "workbench.layoutControl.enabled": false,
+  "workbench.preferredLightColorTheme": "Winter is Coming (Light)",
+  "workbench.preferredDarkColorTheme": "Night Owl",
+  "workbench.editor.splitInGroupLayout": "vertical",
+  "workbench.editor.untitled.hint": "hidden",
+  "workbench.statusBar.visible": false,
 
-  "window.title": "${dirty} ${activeEditorMedium}${separator}${rootName}",
-  "window.zoomLevel": 0,
+  "window.autoDetectColorScheme": true,
+  "window.commandCenter": true,
+  "window.restoreWindows": "none",
+  "window.closeWhenEmpty": true,
 
   "files.autoSave": "onFocusChange",
   "files.eol": "\n",
@@ -50,9 +90,8 @@
     "**/.svg": true
   },
 
-  "terminal.integrated.fontFamily": "Fira Code iScript",
-  "terminal.integrated.fontSize": 16,
-  "terminal.integrated.rendererType": "dom",
+  "terminal.integrated.fontFamily": "JetBrains Mono",
+  "terminal.integrated.fontSize": 15,
 
   "search.exclude": {
     "*.lock": true,
@@ -71,41 +110,30 @@
 
   "npm-intellisense.importLinebreak": "\r\n",
 
-  "bracketPairColorizer.forceIterationColorCycle": true,
-  "bracketPairColorizer.forceUniqueOpeningColor": true,
-  "bracketPairColorizer.showHorizontalScopeLine": false,
-
   "highlight-matching-tag.highlightFromAttributes": false,
   "highlight-matching-tag.showRuler": false,
   "highlight-matching-tag.showPath": false,
   "highlight-matching-tag.highlightSelfClosing": true,
 
-  "material-icon-theme.activeIconPack": "react_redux",
-  "material-icon-theme.hidesExplorerArrows": true,
-  "material-icon-theme.saturation": 0.5,
+  "svgPreview.style": {
+    "html": {
+      "background-position": "0 0, 13px 13px",
+      "background-size": "26px 26px",
+      "background-image": "linear-gradient(45deg, #141414 25%, transparent 25%, transparent 75%, #141414 75%, #141414), linear-gradient(45deg, #141414 25%, transparent 25%, transparent 75%, #141414 75%, #141414)"
+    }
+  },
 
   "gitlens.gitCommands.closeOnFocusOut": true,
 
   "editor.formatOnSave": true,
-  "eslint.alwaysShowStatus": true,
-  "eslint.trace.server": "messages",
-  "editor.codeActionsOnSave": { "source.fixAll.eslint": true },
-  "eslint.packageManager": "yarn",
-  "[javascript]": {
-    "editor.formatOnSave": false
+  "editor.formatOnPaste": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true
   },
-  "[javascriptreact]": {
-    "editor.formatOnSave": false
-  },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "prettier.disableLanguages": ["javascript", "javascriptreact"],
-  "sync.gist": "db10dea2eea3df20256a4352a78ea9d0"
+
+  "tailwindCSS.emmetCompletions": true,
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false
 }

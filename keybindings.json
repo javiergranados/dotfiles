@@ -17,19 +17,24 @@
     "command": "workbench.action.gotoLine"
   },
   {
+    // --> split editor
+    "key": "cmd+1",
+    "command": "workbench.action.splitEditor"
+  },
+  {
+    // --> split file
+    "key": "cmd+2",
+    "command": "workbench.action.toggleSplitEditorInGroup"
+  },
+  {
     // --> show/hide terminal
     "key": "cmd+t",
     "command": "workbench.action.togglePanel"
   },
   {
-    // cmd + ñ --> maximize/restore terminal
+    // --> maximize/restore terminal
     "key": "cmd+[Semicolon]",
     "command": "workbench.action.toggleMaximizedPanel"
-  },
-  {
-    // cmd + º --> split editor
-    "key": "cmd+[IntlBackslash]",
-    "command": "workbench.action.splitEditor"
   },
   {
     // --> toggle zen mode
