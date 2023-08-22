@@ -1,12 +1,7 @@
 {
-  "name": "javascript-30",
-  "version": "0.1.0",
+  "name": "dotfiles",
+  "private": true,
+  "version": "0.2.0",
   "description": "Configuration settings for apps, editors and linters",
-  "keywords": [
-    "dotfiles",
-    "settings",
-    "javascript"
-  ],
-  "author": "Javier Granados",
-  "license": "MIT"
+  "author": "Javier Granados"
 }
